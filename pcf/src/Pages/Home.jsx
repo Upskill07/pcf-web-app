@@ -108,20 +108,23 @@ function Home() {
         <div className="center-block"></div>
         <div className="line"></div>
       </div>
-      <h5 className="wlc1">A social think tank for promoting awareness and self-development of youths in rural area...</h5>
+      <h5 className="wlc1">A non-profit dedicated to nurturing the rural youths through education and self-development since 2015.</h5>
 
       <br />
       <div className="container">
-        <a href="/what-we-do" className="card-link">
-          <div className="card gray1">
-            <div className="icon">
-              <FontAwesomeIcon icon={faGraduationCap} color="#ff160a" size="2x" />
-            </div>
-            <h2 className="title">WHAT WE DO</h2>
-            <p className="description">Someone said that, Self-Help is the best help and we believe in the same.
-              We are committed to lead the cause in a way where individual will</p>
-          </div>
-        </a>
+        <a href="#whatwedo" className="card-link">
+  <div className="card gray1">
+    <div className="icon">
+      <FontAwesomeIcon icon={faGraduationCap} color="#ff160a" size="2x" />
+    </div>
+    <h2 className="title">WHAT WE DO</h2>
+    <p className="description">
+      Someone said that, Self-Help is the best help and we believe in the same.
+      We are committed to lead the cause in a way where individual will
+    </p>
+  </div>
+</a>
+
 
         <a href="/support" className="card-link">
           <div className="card gray1">
@@ -221,13 +224,13 @@ function Home() {
       >
        
         <p>
-         Someone said that, Self-Help is the best help and we believe in the same.
-          We are committed to lead the cause in a way where individual will recognize 
-          his or her own abilities and nurture it for the betterment of self as well as the society.
+         Someone once said, "Self-help is the best help," and we wholeheartedly believe in this philosophy. 
+         We are committed to empowering individuals to recognize and nurture their own abilities—for their 
+         personal growth and for the greater good of society.As a social facilitation centre, we have taken 
+         the initiative to promote awareness and self-development among rural youth. Since our inception, 
+         we have been implementing a range of impactful, result-oriented projects aimed at uplifting and
+         empowering young people in rural areas.
 
-           We as a social facilitation center have taken an initiative to promote 'awareness and 
-           self-development of youths' in rural area. Since inception, we are undertaking diverse
-            result oriented projects for the youths in the rural area.
         </p>
       </div>
     </section>
@@ -500,7 +503,7 @@ function Home() {
             </div>
         
         
-               <div className="join-card">
+               {/*--<div className="join-card">
                 <div className="join-icon green">
                     <FaProjectDiagram />
                   </div>
@@ -508,7 +511,7 @@ function Home() {
                   <p className="join-text dark">
                     Choose an upcoming project and sponsor fully or partially. Call us at <strong>9767881946</strong> to express your interest.
                   </p>
-              </div>
+              </div>--*/}
               
         
            <section className="donate-three-column">
@@ -519,9 +522,9 @@ function Home() {
                       <div className="line"></div>
                     </div>
               <p className="donate-description">
-                The different way you can make donation to this noble cause. People Civilization is the righteous platform
-                 to utilize your donations for the Cause you believe in. Currently People Civilization is active on 
-                 following medium to accept your donations:
+                There are several meaningful ways you can contribute to this noble cause. People Civilization 
+                Foundation serves as<br /> a trusted platform, ensuring your donations are utilized effectively for 
+                the causes you care about. <br />We currently accept donations through the following channels:
               </p>
         
               <div className="donate-columns">
@@ -566,16 +569,11 @@ function Home() {
         <div className="contact-modern-cards">
           <div className="contact-modern-card">
             <FaMapMarkerAlt className="contact-modern-icon" />
-            <h4>Address</h4>
+            <h4>	Address - Registered Address</h4>
             <p>Killari, Ta: Ausa, Dist: Latur, Maharashtra - 413516</p>
           </div>
 
-          <div className="contact-modern-card">
-            <FaPhoneAlt className="contact-modern-icon" />
-            <h4>Phone</h4>
-            <p>+91 9767881946</p>
-          </div>
-
+         
           <div className="contact-modern-card">
             <FaEnvelope className="contact-modern-icon" />
             <h4>Email</h4>
@@ -586,7 +584,7 @@ function Home() {
        <br></br><br></br><br></br>
        <div className="footer-bottom">
       <p>
-         Copyright © 2016 People Civilization Foundation All Rights Reserved.</p>
+         Copyright © 2015 People Civilization Foundation All Rights Reserved.</p>
          
     </div>
     </section>
