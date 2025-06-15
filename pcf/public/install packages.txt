@@ -1,0 +1,13 @@
+Install Packages 
+
+# React Router
+npm install react-router-dom
+
+# React Slick + slick-carousel CSS
+npm install react-slick slick-carousel
+
+# React Icons
+npm install react-icons
+
+# Bootstrap
+npm install bootstrap

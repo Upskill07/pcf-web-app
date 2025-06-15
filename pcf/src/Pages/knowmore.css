@@ -1,0 +1,62 @@
+/* Founder Section */
+.founder-section,
+.education-section,
+.trustee-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.kmhead{
+    text-align: center;
+}
+
+.founder-section h2,
+.trustee-section h2 {
+  color:  #ff6600;
+  margin-bottom: 20px;
+}
+
+.founder-section h3 {
+  font-size: 20px;
+  color: #222;
+}
+
+blockquote {
+  margin: 20px 0;
+  font-style: italic;
+  background-color: #f1f9ff;
+  border-left: 4px solid #0073e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Trustees */
+.trustee-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.trustee-card {
+  flex: 1 1 220px;
+  background-color: #f8f8f8;
+  border-left: 4px solid  #ff6600;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.trustee-card h4 {
+  margin-bottom: 5px;
+  color: black;
+}
+
+
+.kmtxt{
+    text-align: justify;
+}
