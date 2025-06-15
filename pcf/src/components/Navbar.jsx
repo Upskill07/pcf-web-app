@@ -128,7 +128,8 @@ export default function Navbar() {
             <span>pcfkillari[at]gmail.com</span>
           </div>
           
-        </div>
+        </div> 
+        
 
         <div className="social-icons">
           <a
