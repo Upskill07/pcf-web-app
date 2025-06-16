@@ -171,16 +171,18 @@ function Home() {
         <div className="about-container">
           <div className="about-text">
 
-            <h5>People Civilization: Empowering Rural Youth Since 2014</h5>
+            <h5>People Civilization Foundation, Killari</h5>
             <p>
-              <strong>People Civilization</strong> is a noble initiative dedicated to empowering rural youth through awareness,
-              education, and holistic development. Since 2014, we have been committed to fostering a continuous
-              journey of <strong>self-growth, empowerment, and sustainable change.</strong>
-
+            People Civilization Foundation, a non-profit organization founded in 2015 by Dnyaneshwar Birajdar and 
+            his group, is a dedicated initiative focused on empowering rural youth through awareness, education, 
+            and holistic development. We have remained committed to nurturing self-growth, building resilience, and
+            driving sustainable change from the ground up.
             </p>
+            <br />
             <p>
-              We believe that true development begins from within. Our mission is to support young individuals in
-              recognizing their potential and guiding them to channel it with a positive and proactive mindset.
+             We believe that true development begins from within. Our mission is to help young individuals 
+             recognize their potential and guide them in channelling it with purpose, confidence, and a proactive
+             mindset.
             </p>
             <p>Through this social platform, we focus on <strong>untapped areas</strong> such as <strong>Career
               Counseling of youths in
