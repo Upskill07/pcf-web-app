@@ -169,37 +169,40 @@ function Home() {
         <div className="line"></div>
       </div>
         <div className="about-container">
-          <div className="about-text">
+         <div className="about-text">
+      <h5>People Civilization Foundation, Killari</h5>
+      
+      <p>
+        People Civilization Foundation, a non-profit organization founded in 2015 by{' '}
+        <Link 
+          to="/knowmore" 
+          style={{ color: '#f57c00', textDecoration: 'none', fontWeight: 'bold' }}
+        >
+          Dnyaneshwar Birajdar
+        </Link>{' '}
+        and his group, is a dedicated initiative focused on empowering rural youth through awareness, education, 
+        and holistic development. We have remained committed to nurturing self-growth, building resilience, and
+        driving sustainable change from the ground up.
+      </p>
 
-            <h5>People Civilization Foundation, Killari</h5>
-            <p>
-            People Civilization Foundation, a non-profit organization founded in 2015 by Dnyaneshwar Birajdar and 
-            his group, is a dedicated initiative focused on empowering rural youth through awareness, education, 
-            and holistic development. We have remained committed to nurturing self-growth, building resilience, and
-            driving sustainable change from the ground up.
-            </p>
-            <br />
-            <p>
-             We believe that true development begins from within. Our mission is to help young individuals 
-             recognize their potential and guide them in channelling it with purpose, confidence, and a proactive
-             mindset.
-            </p>
-            <p>Through this social platform, we focus on <strong>untapped areas</strong> such as <strong>Career
-              Counseling of youths in
-              rural areas, SWOT analysis, School and Skill Development and need-based Projects in Education and
-              Environment.</strong></p>
-            <p>
-              We work at the <strong>root causes</strong> of challenges aiming to create long-term impact rather than temporary
-              solutions. By encouraging self-awareness and practical implementation of skills, we strive to
-              build a generation that is confident, capable, and community driven.
-            </p>
-            <Link className="about-button" to="/knowmore">Know more...</Link>
+      <p>
+        We believe that true development begins from within. Our mission is to help young individuals 
+        recognize their potential and guide them in channelling it with purpose, confidence, and a proactive
+        mindset.
+      </p>
 
-          </div>
+      <p>
+        We work at the root causes of challenges, aiming to create long-term impact rather than temporary 
+        solutions. By fostering self-awareness and encouraging the practical application of skills, we strive
+        to build a generation that is empowered, capable, and committed to uplifting their communities.
+      </p>
+
+      <Link className="about-button" to="/knowmore">Know more...</Link>
+    </div>
           <div className="about-video">
             <video controls>
               <source src={pcfvideo} type="video/mp4" />
-              Your browser does not support the video tag.
+             
             </video>
           </div>
         </div>
@@ -466,43 +469,32 @@ function Home() {
         
         
            
-        <div className="join-container">
-              
-        
-              <div className="join-grid">
-                {/* Donations Card */}
-                <div className="join-card">
-                  <div className="join-icon orange">
-                    <FaHandHoldingHeart />
+          <div className="join-container">
+                <div className="join-grid two-columns">
+                  {/* Donations Card */}
+                  <div className="join-card">
+                    <div className="join-icon orange">
+                      <FaHandHoldingHeart />
+                    </div>
+                    <h3 className="join-title">Donations</h3>
+                    <p className="join-text">
+                      Your donations empower our noble causes. People Civilization is a righteous platform for causes you believe in.
+                    </p>
                   </div>
-                  <h3 className="join-title">Donations</h3>
-                  <p className="join-text">
-                    Your donations empower our noble causes. People Civilization is a righteous platform for causes you believe in.
-                  </p>
-                </div>
-        
-                {/* Volunteer Card */}
-                <div className="join-card volunteer-card">
-                  <h3 className="join-title orange-text">Volunteer Registration</h3>
-                  <p className="join-text dark">
-                    Join us on the field. Your contribution matters more than ever. Help us lead this cause in your unique way.
-                  </p>
-                </div>
-        
-                {/* Social Associates Card */}
-                <div className="join-card">
-                  <div className="join-icon orange">
-                    <FaUsers />
+
+                  {/* Social Associates Card */}
+                  <div className="join-card">
+                    <div className="join-icon orange">
+                      <FaUsers />
+                    </div>
+                    <h3 className="join-title">Become Our Social Associates</h3>
+                    <p className="join-text">
+                      Organizations and groups can partner with us for common social responsibilities. Register to collaborate.
+                    </p>
                   </div>
-                  <h3 className="join-title">Become Our Social Associates</h3>
-                  <p className="join-text">
-                    Organizations and groups can partner with us for common social responsibilities. Register to collaborate.
-                  </p>
                 </div>
               </div>
-        
-              
-            </div>
+
         
         
                {/*--<div className="join-card">
@@ -516,6 +508,8 @@ function Home() {
               </div>--*/}
               
         
+
+
            <section className="donate-three-column">
               <h2 className="donate-heading">Donate</h2>
                <div className="line-wrapper">
@@ -532,17 +526,18 @@ function Home() {
               <div className="donate-columns">
                 <div className="donate-box">
                   <h3>Bank Details</h3>
-                  <p><strong>Account Holder Name:</strong> People Civilization Foundation</p>
-                  <p><strong>Branch:</strong> Bank of Maharashtra, Killari</p>
+                  <p><strong>Account Holder Name:</strong> People Civilization Foundation Killari</p>
+                  <p><strong>Branch:</strong> Bank of Maharashtra</p>
                   <p><strong>Account No:</strong> 60239904236</p>
                   <p><strong>IFSC:</strong> MAHB0000248</p>
                 </div>
         
                 <div className="donate-box">
-                  <h3>Donate through Phone</h3>
-                  <p><strong>Please Call:</strong></p>
-                  <p>(+91) 9767881946</p>
-                  <p>(+91) 9890997368</p>
+                  <h3>Donate through UPI</h3>
+                  <p><strong>UPI ID:</strong></p>
+                  <p>919767881946.P@mahb</p>
+                  
+                  
                 </div>
         
                 <div className="donate-box">
@@ -553,6 +548,10 @@ function Home() {
                   </p>
                 </div>
               </div>
+              
+              <marquee style={{ color: 'red', fontSize: '0.875rem', marginTop: '8px' }}>
+                Note:-Donations to our organization are eligible for tax exemption under Section 80G of the Income Tax Act, 1961.
+              </marquee>
             </section>
 
       </div>
@@ -571,7 +570,7 @@ function Home() {
         <div className="contact-modern-cards">
           <div className="contact-modern-card">
             <FaMapMarkerAlt className="contact-modern-icon" />
-            <h4>	Address - Registered Address</h4>
+            <h4>	Registered Address</h4>
             <p>Killari, Ta: Ausa, Dist: Latur, Maharashtra - 413516</p>
           </div>
 

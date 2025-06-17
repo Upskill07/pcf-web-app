@@ -56,6 +56,8 @@
     height: 200px;
   }
 }
+/* Carousel Images */
+
 
 .container {
   display: flex;
@@ -186,6 +188,10 @@
     align-items: flex-start;
     justify-content: center;
   }
+  
+  .about-button {
+    margin-left: 0; /* remove fixed margin */
+  }
 }
 
 .about-text {
@@ -266,6 +272,7 @@
   }
 }
 
+
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -277,7 +284,7 @@
 
 .flip-card {
   background-color: transparent;
-  width: 400px;
+  width: 300px;
   height: 120px;
   perspective: 1000px;
 }
@@ -327,6 +334,9 @@
   transition: transform 0.3s ease;
   margin-left: 20px;
 }
+
+
+/*What we do  */
 
 .what-we-do {
   padding: 40px;

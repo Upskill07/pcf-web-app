@@ -12,9 +12,9 @@ const Gallery = () => {
   const [showWelcome, setShowWelcome] = useState(false);
 
   const galleryRef = useRef(null);
-
-  const schoolKitYears = ['2025', '2024', '2023', '2022', '2021'];
   const otherActiveProjects = ['Bolkya Bhinti', 'Winter'];
+  const schoolKitYears = ['2025', '2024', '2023', '2022', '2021'];
+  
   const pastProjects = [
     { category: 'Gift of Education' },
     { category: 'DnyanSetu' },
@@ -26,12 +26,13 @@ const Gallery = () => {
   ];
 
   // Show welcome text when Gallery component is first opened
-  useEffect(() => {
-    setMainTab('Active Projects');
-    setIsSchoolKitOpen(false);
-    setActiveSubTab('');
-    setShowWelcome(true);
-  }, []);
+useEffect(() => {
+  setMainTab('Active Projects');
+  setIsSchoolKitOpen(true);
+  setActiveSubTab('2025');
+  setShowWelcome(false);
+}, []);
+
 
   useEffect(() => {
     if (!activeSubTab) return;

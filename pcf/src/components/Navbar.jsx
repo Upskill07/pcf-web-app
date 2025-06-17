@@ -11,6 +11,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeId, setActiveId] = useState(window.location.hash || "#home");
@@ -31,16 +32,15 @@ export default function Navbar() {
     e.preventDefault();
 
     if (location.pathname !== "/") {
-      setScrollTargetId(id); // Save ID to scroll later
-      navigate("/");         // Navigate to home
+      setScrollTargetId(id);
+      navigate("/");
     } else {
-      scrollToSection(id);   // Scroll immediately
+      scrollToSection(id);
     }
 
-    setIsOpen(false);
+    setIsOpen(false); // Close mobile menu
   };
 
-  // Scroll after route changes to home
   useEffect(() => {
     if (location.pathname === "/" && scrollTargetId) {
       const tryScroll = () => {
@@ -49,14 +49,13 @@ export default function Navbar() {
           scrollToSection(scrollTargetId);
           setScrollTargetId(null);
         } else {
-          setTimeout(tryScroll, 100); // Retry until the DOM is ready
+          setTimeout(tryScroll, 100);
         }
       };
       tryScroll();
     }
   }, [location.pathname, scrollTargetId]);
 
-  // Update activeId on hash change
   useEffect(() => {
     const onHashChange = () => {
       setActiveId(window.location.hash || "#home");
@@ -104,7 +103,9 @@ export default function Navbar() {
               return (
                 <li key={id} className={isActive ? "active" : ""}>
                   {isGallery ? (
-                    <Link to={href}>{label}</Link>
+                    <Link to={href} onClick={() => setIsOpen(false)}>
+                      {label}
+                    </Link>
                   ) : (
                     <a href={href} onClick={(e) => handleNavClick(e, id)}>
                       {label}
@@ -127,9 +128,12 @@ export default function Navbar() {
             <FaEnvelope color="#ff6600" />
             <span>pcfkillari[at]gmail.com</span>
           </div>
-          
-        </div> 
-        
+           <div className="contact-item">
+            {/*Add facebook like count  */}
+            
+            
+           </div>
+        </div>
 
         <div className="social-icons">
           <a
