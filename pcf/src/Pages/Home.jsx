@@ -570,7 +570,7 @@ function Home() {
         <div className="contact-modern-cards">
           <div className="contact-modern-card">
             <FaMapMarkerAlt className="contact-modern-icon" />
-            <h4>	Registered Address</h4>
+            <h4>Registered Address</h4>
             <p>Killari, Ta: Ausa, Dist: Latur, Maharashtra - 413516</p>
           </div>
 
