@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Pages/Gallery.css';
 
+
 const Gallery = () => {
   const [mainTab, setMainTab] = useState('Active Projects');
   const [activeSubTab, setActiveSubTab] = useState('');
@@ -13,7 +14,7 @@ const Gallery = () => {
 
   const galleryRef = useRef(null);
   const otherActiveProjects = ['Bolkya Bhinti', 'Winter'];
-  const schoolKitYears = ['2025', '2024', '2023', '2022', '2021'];
+  const schoolKitYears = ['2021', '2022', '2023', '2024', '2025'];
   
   const pastProjects = [
     { category: 'Gift of Education' },
@@ -29,7 +30,7 @@ const Gallery = () => {
 useEffect(() => {
   setMainTab('Active Projects');
   setIsSchoolKitOpen(true);
-  setActiveSubTab('2025');
+  setActiveSubTab('2021');
   setShowWelcome(false);
 }, []);
 

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../Pages/Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faStar, faThumbsUp, faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faHandshake, faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { FaArrowRight, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { FaHandHoldingHeart, FaUsers, FaProjectDiagram } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
@@ -125,25 +125,18 @@ function Home() {
   </div>
 </a>
 
-
-        <a href="/support" className="card-link">
+       
           <div className="card gray1">
             <div className="icon">
-              <FontAwesomeIcon icon={faStar} color="orange" size="2x" />
+              <FontAwesomeIcon icon={faHandshake} color="orange" size="2x" />
             </div>
-            <h2 className="title">SUPPORT THE CAUSE</h2>
-            <p className="description">As a social entity we seek support involvement encour- agement and contr- ibution from individuals groups corporates and like-minded</p>
+            <h2 className="title">How I Can Join</h2>
+            <p className="description">Become a part of our mission by volunteering, donating, or spreading the 
+              word — every effort counts toward empowering rural youth.</p>
           </div>
-        </a>
+        
 
-        <div className="card gray2">
-          <div className="icon">
-            <FontAwesomeIcon icon={faThumbsUp} color="#09ed2f" size="2x" />
-          </div>
-          <h2 className="title">TAKE INITIATIVE</h2>
-          <p className="description">"Be the change you wish to see in the world." Put your Social Cause here and as per hour,
-            PCP team will contribute to lead your cause in your</p>
-        </div>
+     
 
         <div className="card blue">
           <div className="icon">
@@ -448,7 +441,7 @@ function Home() {
                  
                   
         
-         <section style={{ maxWidth: '1000px', margin: '3rem auto', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+        {/**  <section style={{ maxWidth: '1000px', margin: '3rem auto', display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
               <div
                 style={{
                   flex: '1 1 300px',
@@ -465,6 +458,8 @@ function Home() {
                 </p>
               </div>
             </section>
+            
+            */}
         
         
         
@@ -478,7 +473,9 @@ function Home() {
                     </div>
                     <h3 className="join-title">Donations</h3>
                     <p className="join-text">
-                      Your donations empower our noble causes. People Civilization is a righteous platform for causes you believe in.
+                      There are several meaningful ways you can contribute to this noble cause. People Civilization 
+                      Foundation serves as a trusted platform, ensuring your donations are utilized effectively for 
+                      the causes you care about. We currently accept donations through the following channels:
                     </p>
                   </div>
 
@@ -487,7 +484,7 @@ function Home() {
                     <div className="join-icon orange">
                       <FaUsers />
                     </div>
-                    <h3 className="join-title">Become Our Social Associates</h3>
+                    <h3 className="join-title">Join as Vallentaring</h3>
                     <p className="join-text">
                       Organizations and groups can partner with us for common social responsibilities. Register to collaborate.
                     </p>
@@ -511,17 +508,8 @@ function Home() {
 
 
            <section className="donate-three-column">
-              <h2 className="donate-heading">Donate</h2>
-               <div className="line-wrapper">
-                      <div className="line"></div>
-                      <div className="center-block"></div>
-                      <div className="line"></div>
-                    </div>
-              <p className="donate-description">
-                There are several meaningful ways you can contribute to this noble cause. People Civilization 
-                Foundation serves as<br /> a trusted platform, ensuring your donations are utilized effectively for 
-                the causes you care about. <br />We currently accept donations through the following channels:
-              </p>
+          
+             
         
               <div className="donate-columns">
                 <div className="donate-box">

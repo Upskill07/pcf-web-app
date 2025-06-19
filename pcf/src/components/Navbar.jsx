@@ -122,11 +122,11 @@ export default function Navbar() {
         <div className="contact-group">
           <div className="contact-item">
             <FaIdCard color="#ff6600" />
-            <span>Reg.No. MH/153/15, F-23034</span>
+            <span style={{ color: 'grey' }}>Reg.No. MH/153/15, F-23034</span>
           </div>
           <div className="contact-item">
             <FaEnvelope color="#ff6600" />
-            <span>pcfkillari[at]gmail.com</span>
+            <span style={{ color: 'grey' }}>pcfkillari[at]gmail.com</span>
           </div>
            <div className="contact-item">
             {/*Add facebook like count  */}
