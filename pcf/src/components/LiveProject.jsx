@@ -34,18 +34,18 @@ const LiveProjectsWidget = () => {
           <h4>PCF Live Projects</h4>
 
           <div className="project-entry">
-            <strong>🎒 PCF – School Kit</strong><br />
+            <strong>🎒PCF-School-Kit-2025</strong><br />
             <span>
-              Supporting children with educational kits.{" "}
-              <span className="badge badge-success">Ongoing</span>
+              Helping 500 rural students every year with educational School-Kit.{" "}
+              
             </span>
           </div>
 
           <div className="project-entry">
-            <strong>🎨 Bolkya Bhinti</strong><br />
+            <strong>🎨 Bolkya Bhinti – Classroom Transformation </strong><br />
             <span>
-              Art-driven awareness on public walls.{" "}
-              <span className="badge badge-warning">Ongoing</span>
+              Dedicated to transforming classrooms into safe, welcoming spaces for students{" "}
+             
             </span>
           </div>
 

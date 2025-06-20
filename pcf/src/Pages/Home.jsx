@@ -115,7 +115,7 @@ function Home() {
         <a href="#whatwedo" className="card-link">
   <div className="card gray1">
     <div className="icon">
-      <FontAwesomeIcon icon={faGraduationCap} color="#ff160a" size="2x" />
+     <FaUsers size={52} color="#ff6600" />
     </div>
     <h2 className="title">WHAT WE DO</h2>
     <p className="description">
@@ -142,10 +142,16 @@ function Home() {
           <div className="icon">
             <FontAwesomeIcon icon={faPencilAlt} color="#03adfc" size="2x" />
           </div>
-          <h2 className="title">UPCOMING PROJECTS</h2>
-          <p className="description">Year 2016–17. You can participate in any project of your interest and
-            contribute your part in this social</p>
+          <h2 className="title">ONGOING PROJECTS</h2>
+         
+           <marquee style={{ color: 'black', fontSize: '0.875rem', marginTop: '8px' }}>PCF-School-Kit-2025</marquee>
+           
+         
+            
+        
+
         </div>
+        
 
       </div>
 
@@ -260,6 +266,37 @@ function Home() {
 >
 
         {/* Flip Cards */}
+        <div className="slider-card-wrapper">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <h5>PCF-School-Kit-2025</h5>
+              <FaArrowRight className="arrow-icon" />
+            </div>
+            <div className="flip-card-back">
+              <p>Helping 500 rural students every year with educational School-Kit.
+              With each school kit we distribute, we’re not just offering supplies—we’re sending a clear message: 
+              someone believes in you and your future.
+              </p>
+            </div>
+          </div>
+        </div> 
+        </div>
+
+        <div className="slider-card-wrapper">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <h5>Bolkya Bhinti – Classroom Transformation </h5>
+              <FaArrowRight className="arrow-icon" />
+            </div>
+            <div className="flip-card-back">
+              <p>Dedicated to transforming classrooms into safe, welcoming spaces for students</p>
+            </div>
+          </div>
+        </div> 
+        </div>
+
    <div className="slider-card-wrapper">
         <div className="flip-card">
           <div className="flip-card-inner">
@@ -268,68 +305,27 @@ function Home() {
               <FaArrowRight className="arrow-icon" />
             </div>
             <div className="flip-card-back">
-              <p>The unique way to promote life-skills amongst rural students through fun activities... (Since Dec 2016)</p>
+              <p>The unique way to promote life-skills amongst rural students through various interactive & 'fun n frolic' activities.</p>
             </div>
           </div>
-        </div> </div>
+        </div> 
+        </div>
 
-        <div className="slider-card-wrapper">
+         <div className="slider-card-wrapper">
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <h5>Vichardhan</h5>
+              <h5>Career Guidance Workshops</h5>
               <FaArrowRight className="arrow-icon" />
             </div>
             <div className="flip-card-back">
-              <p>An online special ‘Thought of the Day’ initiative... (since 2015)</p>
+              <p>To create awareness amongst rural youths about career paths after SSC & HSC, PCF is organizing Career Guidance Sessions since 2012</p>
             </div>
           </div>
         </div>
         </div>
 
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>PCF Volleyball Club</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Promoting physical and mental fitness amongst youths (est. in Oct 2016)</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Dnyanada Library</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Promoting reading culture amongst rural youths (est. in Jan 2014)</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>PCF Badminton Club</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Promoting fitness amongst youths (est. in Oct 2016)</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="slider-card-wrapper">
+           <div className="slider-card-wrapper">
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
@@ -342,6 +338,16 @@ function Home() {
           </div>
         </div>
         </div>
+
+       
+
+        
+
+       
+
+        
+
+     
 
         <div className="slider-card-wrapper">
         <div className="flip-card">
@@ -351,81 +357,14 @@ function Home() {
               <FaArrowRight className="arrow-icon" />
             </div>
             <div className="flip-card-back">
-              <p>Step to plant & conserve trees in drought area. (2016)</p>
+              <p>To protect our mother earth a small step has been taken to plant & conserve trees in drought area. (2016)</p>
             </div>
           </div>
         </div>
         </div>
 
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>National Youth Day Celebration</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Programs for students on Swami Vivekananda’s birth anniversary (since 2013)</p>
-            </div>
-          </div>
-        </div>
-        </div>
 
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>PCF Special Notebooks for Students</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Low-cost quality notebooks portraying great personalities. (Since 2016)</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Computer Literacy Mission</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Promoting basic free computer education (Since 2014)</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Career Guidance Workshops</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Awareness among rural youths about careers after SSC & HSC (Since 2012)</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Dnyanada Essay Competition</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Supporting rational thinking through writing on social topics (since 2015)</p>
-            </div>
-          </div>
-        </div>
-        </div>
+       
       </Slider>
     </div>
 
@@ -484,9 +423,9 @@ function Home() {
                     <div className="join-icon orange">
                       <FaUsers />
                     </div>
-                    <h3 className="join-title">Join as Vallentaring</h3>
+                    <h3 className="join-title">Join as  Volunteering</h3>
                     <p className="join-text">
-                      Organizations and groups can partner with us for common social responsibilities. Register to collaborate.
+                      We welcome enthusiast volunteers to join hands with us and help us in the mission to empower rural youths. Contact us for more information.
                     </p>
                   </div>
                 </div>
@@ -520,14 +459,18 @@ function Home() {
                   <p><strong>IFSC:</strong> MAHB0000248</p>
                 </div>
         
-                <div className="donate-box">
-                  <h3>Donate through UPI</h3>
-                  <p><strong>UPI ID:</strong></p>
-                  <p>919767881946.P@mahb</p>
-                  
-                  
-                </div>
-        
+              <div className="donate-box">
+  <h3>Donate through UPI</h3>
+  <p><strong>UPI ID:</strong></p>
+  <p 
+    style={{ userSelect: 'none', pointerEvents: 'none' }}
+    onCopy={(e) => e.preventDefault()}
+    onContextMenu={(e) => e.preventDefault()}
+  >
+    919767881946.P@mahb
+  </p>
+</div>
+
                 <div className="donate-box">
                   <h3>Donate through Cheque</h3>
                   <p>
