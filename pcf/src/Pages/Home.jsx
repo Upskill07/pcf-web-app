@@ -275,8 +275,7 @@ function Home() {
             </div>
             <div className="flip-card-back">
               <p>Helping 500 rural students every year with educational School-Kit.
-              With each school kit we distribute, we’re not just offering supplies—we’re sending a clear message: 
-              someone believes in you and your future.
+              
               </p>
             </div>
           </div>
@@ -338,16 +337,6 @@ function Home() {
           </div>
         </div>
         </div>
-
-       
-
-        
-
-       
-
-        
-
-     
 
         <div className="slider-card-wrapper">
         <div className="flip-card">

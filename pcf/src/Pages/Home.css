@@ -284,11 +284,17 @@
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 120px;
+  width: 400px;
+  height: 150px;
   perspective: 1000px;
 }
-
+/* Responsive: smaller width on small screens */
+@media (max-width: 480px) {
+  .flip-card {
+    width: 90%; /* or set to 300px */
+    height: 100px;
+  }
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
