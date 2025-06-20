@@ -310,14 +310,3 @@ def get_image_by_project_name(project_name, image_id):
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-# PrashantLamture
-
-# PrashantLamture  # PrashantLamture#      PrashantLamture# PrashantLamture
-
-
-
-# PrashantLamture  # PrashantLamture#      PrashantLamture# PrashantLamture
-
-
-# PrashantLamture  # PrashantLamture#      PrashantLamture# PrashantLamture
