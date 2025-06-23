@@ -145,6 +145,7 @@ function Home() {
           <h2 className="title">ONGOING PROJECTS</h2>
          
            <marquee style={{ color: 'black', fontSize: '0.875rem', marginTop: '8px' }}>PCF-School-Kit-2025</marquee>
+          <p>Helping 500 rural students every year with educational School-Kit.</p>
            
          
             
