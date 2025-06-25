@@ -3,12 +3,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../Pages/Home.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faHandshake, faPencilAlt } from '@fortawesome/free-solid-svg-icons';
-import { FaArrowRight, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
-import { FaHandHoldingHeart, FaUsers, FaProjectDiagram } from 'react-icons/fa';
+import {faHandshake, faPencilAlt } from '@fortawesome/free-solid-svg-icons';
+import { FaMapMarkerAlt,  FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaHandHoldingHeart} from 'react-icons/fa';
+import { FaSchool,  FaUsers, FaGraduationCap, FaLaptop, FaTree } from "react-icons/fa";
+import { GiSchoolBag,GiFruitTree } from "react-icons/gi";
+import { IoColorPaletteOutline } from "react-icons/io5";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Slider from "react-slick";
+
 import { Link } from 'react-router-dom';
 import pcfvideo from "../assets/img/pcfvideo.mp4";
 import LiveProject from "../components/LiveProject.jsx";
@@ -241,122 +244,48 @@ function Home() {
     </section>
 
 
-<div className="card-slider">
-      <Slider
-  dots={true}
-  infinite={true}
-  speed={800}
-  autoplay={true}
-  autoplaySpeed={5000}
-  slidesToShow={3}
-  slidesToScroll={1}
-  centerMode={true}
-  centerPadding="0px"
-  responsive={[
-
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: '40px',
-      },
-    },
-  ]}
->
-
-        {/* Flip Cards */}
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>PCF-School-Kit-2025</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Helping 500 rural students every year with educational School-Kit.
-              
-              </p>
-            </div>
-          </div>
-        </div> 
-        </div>
-
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Bolkya Bhinti – Classroom Transformation </h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Dedicated to transforming classrooms into safe, welcoming spaces for students</p>
-            </div>
-          </div>
-        </div> 
-        </div>
-
-   <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Antarang-Personality Development Workshop</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>The unique way to promote life-skills amongst rural students through various interactive & 'fun n frolic' activities.</p>
-            </div>
-          </div>
-        </div> 
-        </div>
-
-         <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Career Guidance Workshops</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>To create awareness amongst rural youths about career paths after SSC & HSC, PCF is organizing Career Guidance Sessions since 2012</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-           <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Computer Literacy Mission</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>Promoting basic free computer education (Since 2014)</p>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div className="slider-card-wrapper">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <h5>Tree Plantation initiative</h5>
-              <FaArrowRight className="arrow-icon" />
-            </div>
-            <div className="flip-card-back">
-              <p>To protect our mother earth a small step has been taken to plant & conserve trees in drought area. (2016)</p>
-            </div>
-          </div>
-        </div>
-        </div>
 
 
-       
-      </Slider>
-    </div>
+<div className="card-grid">
+  <div className="simple-card">
+    <GiSchoolBag className="card-icon" />
+    <h5>PCF-School-Kit-2025</h5>
+    <p>Helping 500 rural students every year with educational School-Kit.</p>
+  </div>
+
+  <div className="simple-card">
+    <IoColorPaletteOutline className="card-icon" />
+    <h5>Bolkya Bhinti</h5>
+    <p>Dedicated to transforming classrooms into safe, welcoming spaces for students</p>
+  </div>
+
+  <div className="simple-card">
+    <FaUsers className="card-icon" />
+    <h5>Antarang Workshop</h5>
+    <p>The unique way to promote life-skills amongst rural students through various interactive & 
+      'fun n frolic' activities.</p>
+  </div>
+
+  <div className="simple-card">
+    <FaGraduationCap className="card-icon" />
+    <h5>Career Guidance</h5>
+    <p>To create awareness amongst rural youths about career paths after SSC & HSC, PCF is organizing Career 
+      Guidance Sessions since 2012.</p>
+  </div>
+
+  <div className="simple-card">
+    <FaLaptop className="card-icon" />
+    <h5>Computer Literacy Mission</h5>
+    <p>Promoting basic free computer education (Since 2014).</p>
+  </div>
+
+  <div className="simple-card">
+    <GiFruitTree className="card-icon" />
+    <h5>Tree Plantation</h5>
+    <p>To protect our mother earth a small step has been taken to plant & conserve trees in drought area. (2016)</p>
+  </div>
+</div>
+
 
       <div id="joinus">
              <br /><br /><br /> 
