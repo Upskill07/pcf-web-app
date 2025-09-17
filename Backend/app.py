@@ -233,6 +233,7 @@ def get_image_by_category(category, image_id):
 if __name__ == '__main__':
     app.run(debug=True)
 '''
+...
 from flask import Flask, jsonify, send_file, request
 from flask_cors import CORS
 import mysql.connector
@@ -308,5 +309,52 @@ def get_image_by_project_name(project_name, image_id):
 
 # -------------------- MAIN --------------------
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### WORKING CODE ###
+
+# Slider list - get all images with their IDs and names
+@app.route('/api/images', methods=['GET'])
+def get_slider_image_list():
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, image_name FROM tbl_slider")
+    images = cursor.fetchall()
+    conn.close()
+
+    return jsonify([
+        {
+            'id': image_id,   # This is VARCHAR, so string
+            'name': image_name,
+            'url': f'/api/images/{image_id}'
+        }
+        for image_id, image_name in images
+    ])
+
+# Get image binary data by string ID
+@app.route('/api/images/<string:image_id>', methods=['GET'])
+def get_slider_image(image_id):
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+    cursor.execute("SELECT image_data FROM tbl_slider WHERE id = %s", (image_id,))
+    row = cursor.fetchone()
+    conn.close()
+
+    if row and row[0]:
+        return send_file(io.BytesIO(row[0]), mimetype='image/jpeg')
+    return jsonify({'error': 'Image not found'}), 404 
 
